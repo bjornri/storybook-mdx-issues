@@ -1,0 +1,28 @@
+import {Canvas, Meta, Story} from "@storybook/blocks";
+import ButtonStories, {Primary, Secondary} from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+```html
+<Canvas withToolbar>
+    <Story of={Primary} />
+</Canvas>
+
+This renders the button with the primary style.
+```
+
+<Canvas withToolbar>
+    <Story of={Primary} />
+</Canvas>
+
+```html
+<Canvas withToolbar>
+    <Story of={Secondary} />
+</Canvas>
+
+This should render Secondary style, but renders primary.
+```
+
+<Canvas withToolbar>
+    <Story of={Secondary} />
+</Canvas>
